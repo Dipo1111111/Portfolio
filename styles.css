@@ -1,0 +1,572 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Loader Styles */
+#loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #121212; /* Background color for loader */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures loader is above all content */
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Spinner Styles */
+.spinner {
+    border: 10px solid rgba(255, 255, 255, 0.3); /* Light grey */
+    border-radius: 50%;
+    border-top: 10px solid #DC143C; /* Crimson Red color */
+    width: 80px; /* Larger size */
+    height: 80px; /* Larger size */
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide Content Initially */
+#content {
+    display: none; /* Hide content by default */
+}
+
+.container {
+    width: 90%;
+    max-width: 1700px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Base Navbar Styles */
+header nav {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 28px;
+    font-weight: bold;
+    float: left;
+}
+
+header nav ul li {
+    margin-left: 0px;
+}
+
+header nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 24px;
+    
+}
+
+header nav ul li a:hover {
+    color: #DC143C;
+}
+
+header nav ul li a strong {
+    color: #DC143C;
+}
+
+
+/* Mobile Styles */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    header nav ul {
+        font-size: 5px;
+    }
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+    header nav ul {
+        font-size: 5px;
+        margin: 0px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    header nav ul {
+        font-size: 5px;
+        margin: 0px;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    header nav ul {
+        font-size: 10px;
+        margin: 0px;
+    }
+}
+
+
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero h1 span {
+    color: #DC143C;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    padding: 10px 30px;
+    background-color: #DC143C;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #DC143C;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#portfolio .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-item h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.portfolio-item p {
+    padding: 0 20px 20px 20px;
+    font-size: 16px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+form .btn {
+    padding: 10px 30px;
+    background-color: #DC143C;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+form .btn:hover {
+    background-color: #DC143C;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: fit-content;
+}
+
+.skill-item {
+    min-width: 30%; /* Adjust based on how many items you want visible at once */
+    box-sizing: border-box;
+    text-align: center;
+    background: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px; /* Space between items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn {
+    background-color: #DC143C;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    position: absolute; /* Absolute position within container */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000; /* Ensure buttons are on top */
+}
+
+.carousel-btn.left-btn {
+    left: 10px; /* Distance from the left edge of the container */
+}
+
+.carousel-btn.right-btn {
+    right: 10px; /* Distance from the right edge of the container */
+}
+
+.carousel-btn:hover {
+    background-color: #DC143C; /* Change color on hover */
+    /* Removed transform effect */
+}
+
+
+
+
+.container {
+    width: 90%;
+    max-width: 2200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background: #1f1f1f;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 28px;
+    color: #DC143C;
+    margin-right: 20px;
+    text-align: left;
+    justify-content: flex-start;
+    float: left;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #DC143C;
+}
+
+
+#hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+#hero h1 span {
+    color: #DC143C;
+}
+
+#hero p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+#hero .btn {
+    padding: 12px 36px;
+    background-color: #DC143C;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#hero .btn:hover {
+    background-color: #DC143C;
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+section h2:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #DC143C;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+#about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+#projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    background: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-item h3 {
+    font-size: 22px;
+    margin: 20px 0 10px;
+}
+
+.project-item p {
+    padding: 0 20px 20px 20px;
+    font-size: 16px;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-item {
+    background: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 16px;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: #1f1f1f;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+form .btn {
+    padding: 12px 36px;
+    background-color: #DC143C;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+form .btn:hover {
+    background-color: #DC143C;
+    transform: translateY(-3px);
+}
+
+footer {
+    background: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}

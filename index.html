@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Igbojuwo Oladipupo | Portfolio</title>
+    <link rel="icon" href="2-removebg-preview.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    
+
+    <header>
+        <div class="container">
+            <nav id="nav-menu" class="nav-menu">
+                <ul>
+                    <li><a href="#home"><strong>Home</strong></a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+
+    <section id="hero">
+        <div class="container">
+            <h1>Hi, I'm <span>Igbojuwo Oladipupo</span></h1>
+            <p>A <span>Marketing Specialist</span> with a Priority for <span>your Growth</span></p>
+            <a href="#projects" class="btn">Explore My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am Igbojuwo Oladipupo, a Video Editor driven by the desire to push the boundaries of what's possible. I have honed my skills in Graphic Design, Video Editing and Content creation. My work is defined by a commitment to excellence, innovation, and a relentless pursuit of improvement. Whether it's developing groundbreaking projects or solving complex problems, I thrive on turning ideas into reality.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Selected Projects</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project Title 1</h3>
+                    <p>A brief description of the project, highlighting the innovation and impact.</p>
+                </div>
+                <div class="project-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project Title 2</h3>
+                    <p>A brief description of the project, focusing on your role and the outcome.</p>
+                </div>
+                <div class="project-item">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project Title 3</h3>
+                    <p>A brief description of the project, emphasizing creativity and problem-solving.</p>
+                </div>
+                <div class="project-item">
+                    <img src="project4.jpg" alt="Project 4">
+                    <h3>Project Title 4</h3>
+                    <p>A brief description of the project, showcasing your expertise and results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn" onclick="prevSkill()">&#10094;</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel">
+                        <div class="skill-item">
+                            <h3>Video Editing</h3>
+                            <p>I specialize in turning raw footage into compelling visual stories. With expertise in software like<br> Adobe Premiere Pro and Final Cut Pro, I excel in editing, color correction, and audio enhancement. <br>My work focuses on creating engaging content for various platforms, ensuring every project is <br>polished and impactful. Whether for promotional videos, social media, or cinematic pieces, I bring<br> creativity and technical skill to every edit.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Content Creation<h3>
+                            <p>As a content creator, I craft engaging and impactful material across multiple formats, including graphics, videos, and written content. My role involves conceptualizing, designing, and producing content that resonates with audiences and meets marketing goals. From developing visual ads and managing social media profiles to editing videos and writing compelling copy, I focus on delivering high-quality, consistent content that drives results and enhances brand presence.
+
+                            </p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Video Ads Creation</h3>
+                            <p>In video ads creation, I specialize in producing compelling visual narratives that capture attention <br>and drive engagement. My process involves scripting, shooting, and editing to create dynamic and <br>persuasive advertisements. I focus on crafting visually appealing content that aligns with brand <br>messaging and resonates with target audiences. Whether it’s a promotional campaign or a product <br>launch, my goal is to produce videos that not only inform but also inspire action <br>and foster brand loyalty.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Picture Ads Creation</h3>
+                            <p>In picture ads creation, I excel at designing striking visuals that convey powerful messages and <br>captivate viewers. My approach combines creative design, strategic messaging, and a deep <br>understanding of audience preferences to produce eye-catching advertisements. From concept to <br>execution, I focus on crafting images that effectively highlight key features and benefits of products or services, driving engagement and<br> conversion through compelling and memorable visuals.
+                            </p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Ads Campaign Management</h3>
+                            <p>In ads campaign management, I specialize in developing and executing strategic advertising <br>campaigns that drive results. My expertise includes crafting targeted ad strategies, optimizing ad <br>placements, and analyzing performance metrics to ensure maximum ROI. By leveraging data-driven <br>insights and market trends, I manage every aspect of the campaign lifecycle, from initial planning to <br>ongoing adjustments, ensuring that each campaign effectively reaches its intended audience and <br>achieves its goals.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn right-btn" onclick="nextSkill()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/xqazyrea" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Igbojuwo Oladipupo</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    
+    
+    
+    
+
+</body>
+</html>
