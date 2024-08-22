@@ -123,7 +123,7 @@ header nav ul li a strong {
 
 
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background: url('9-Things-to-Check-if-Adobe-Premiere-Pro-Frequently-Crashes-on-Your-PC.png') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -561,12 +561,67 @@ form .btn:hover {
 }
 
 footer {
-    background: #1f1f1f;
+    background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 20px 0;
 }
 
-footer p {
-    margin: 0;
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contact-info, .quick-links, .social-links {
+    flex: 1;
+}
+
+.contact-info p, .quick-links a {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.social-links a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.quick-links a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+/* .newsletter-signup {
+    margin-top: 10px;
+}
+
+.newsletter-signup input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter-signup button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e60023;
+    color: #fff;
+    cursor: pointer;
+} */
+
